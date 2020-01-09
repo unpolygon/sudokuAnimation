@@ -1,0 +1,133 @@
+.square{
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.square-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:auto auto auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.square-grid div{
+  /* border: 1px solid rgba(0, 0, 231, 0.596); */
+  text-align: center;
+  align-items: center;
+  font-size: 10px;
+  color: grey;
+  opacity: 0.5;
+}
+
+.square-correct{
+  background-color: rgba(54, 236, 151, 0.849);
+}
+
+.square-wrong{
+  background-color: rgba(248, 125, 125, 0.815);
+}
+
+
+.square-prototype{
+  color: blue;
+}
+
+.square-focus{
+    color: green;
+}
+
+.square-focus:before{
+    content:' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    opacity: 0.2;
+
+}
+
+.square-neighbor{
+    background-color: rgba(243, 241, 241, 0.5);
+}
+
+.solved{
+  background-color: rgba(0, 0, 231, 0.596);
+  color: white;
+}
+
+.square-solve{
+    animation-name: visitedAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.zero-square{
+  animation-name: zeroSquare;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes zeroSquare{
+  0% {
+    transform: scale(0.7);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(1);
+    background-color:rgba(171, 136, 255, 0.692);
+
+  }
+}
+
+@keyframes visitedAnimation {
+    0% {
+      transform: scale(0.7);
+      background-color: rgba(0, 0, 66, 0.75);
+    }
+  
+    50% {
+      background-color: rgba(17, 104, 217, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(0, 217, 159, 0.75);
+      z-index:1;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(0, 190, 218, 0.75);
+    }
+  }
+
+

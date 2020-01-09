@@ -1,0 +1,10 @@
+cd backend
+npm init -y
+npm install express cors mongoose dotenv
+npm install -g nodemon
+nodemon server
+cd ..
+npm i axios
+npm i bootstrap
+npm i react-datepicker
+npm i react-router-dom
