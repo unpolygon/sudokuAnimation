@@ -1,6 +1,6 @@
 {
   "name": "sudoku",
-  "homepage": "https://unpolygon.github.io/SudokuExpert/",
+  "homepage": "https://unpolygon.github.io/sudokuAnimation/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
