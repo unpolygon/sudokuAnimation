@@ -178,7 +178,7 @@ class game extends React.Component{
                 _.whenKey(0,row,col,true);
             }));
 
-            $('button').blur(function(){
+            $('button').on('blur',function(){
                 $('button[row='+row+']').removeClass('square-neighbor');
                 $('button[col='+col+']').removeClass('square-neighbor');    
                 $('button[value='+i+']').removeClass('square-focus');
