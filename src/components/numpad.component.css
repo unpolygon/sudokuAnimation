@@ -6,12 +6,13 @@
 */
 
 .NumPad{
-    /* display: none; */
+    display: none;
     /* flex-direction: row; */
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     font-size: 2em;
     background-color: rgba(255, 255, 255, 0.733);
+    
 }
 
 .NumPad button{
@@ -21,10 +22,16 @@
     color: black;
 }
 
-/* @media screen and (max-width:1366px){
+@media screen and (max-width:1024px) {
     .NumPad{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
+        padding-bottom:50px;
     }
-} */
+}
+
+@media (orientation: landscape) {
+    .NumPad{
+        display: flex;
+        padding-bottom:50px;
+    }
+  }
