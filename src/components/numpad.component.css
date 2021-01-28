@@ -6,24 +6,11 @@
 */
 
 .NumPad{
-    display: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 100vw;
+    /* display: none; */
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: space-around;
     font-size: 2em;
-    margin: auto;
-    /* border-color: red;
-    border-width: 2px;
-    border-style: solid; */
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    height: 100vh;
     background-color: rgba(255, 255, 255, 0.733);
 }
 
@@ -34,10 +21,10 @@
     color: black;
 }
 
-@media screen and (max-width:1366px){
+/* @media screen and (max-width:1366px){
     .NumPad{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
-}
+} */

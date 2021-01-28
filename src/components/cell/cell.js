@@ -25,17 +25,6 @@ function cell(props){
         row = {`${row}`}
         col = {`${col}`}
         >
-            {/* <div className='square-grid'>
-                <div className='square-grid-1'>1</div>
-                <div className='square-grid-2'>2</div>
-                <div className='square-grid-3'>3</div>
-                <div className='square-grid-4'>4</div>
-                <div className='square-grid-5'>5</div>
-                <div className='square-grid-6'>6</div>
-                <div className='square-grid-7'>7</div>
-                <div className='square-grid-8'>8</div>
-                <div className='square-grid-9'>9</div>
-            </div> */}
             {i == 0 ? ' ': i}
         </button>
     );

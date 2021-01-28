@@ -288,7 +288,7 @@ class game extends React.Component{
                             redo = {()=>this.handleRedo()}
                             check = {() => this.handleCheck()}
                         />   
-                        <Time className = 'Time'/>
+                        {/* <Time className = 'Time'/> */}
                     </div>
                 </div>
                 <NumPad className = 'Numpad'></NumPad>

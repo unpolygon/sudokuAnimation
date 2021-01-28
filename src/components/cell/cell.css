@@ -168,6 +168,10 @@ color: white;
         animation-play-state: running;
 }
 
+input[type="tel"]{
+  display: none;
+}
+
 @-webkit-keyframes zeroSquare{
 0% {
   -webkit-transform: scale(0.7);

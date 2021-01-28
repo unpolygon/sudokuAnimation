@@ -38,8 +38,8 @@ export default class navBar extends React.Component{
                     <h4>SUDOKU</h4>
                 </div>
                 <ul className='nav-links'>
-                    <li><a href='#'>Speed</a></li>
-                    <li><a href='#' onClick={this.props.random}>Random</a></li>
+                    {/* <li><a href='#'>Speed</a></li> */}
+                    <li><a href='#' onClick={this.props.random}>Puzzle</a></li>
                     <li><a href='#' onClick={this.props.solve}>Solve</a></li>
                     <li><a href='#' onClick={this.props.clearTable}>Clear Table</a></li>
                     <li><a href='#' onClick={this.props.restart}>Restart</a></li>
