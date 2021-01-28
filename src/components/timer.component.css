@@ -1,12 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 .Timer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 5em;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     margin: auto;
 }
@@ -16,11 +30,14 @@
 }
 
 .Timer .icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1em;
     height: 1em;
     text-align: center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     border-color: black;
     border-radius: 50%;
     border-style: solid;
@@ -35,6 +52,9 @@
 @media screen and (max-width: 1024px){
     .Timer{
         font-size: 2em;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 }

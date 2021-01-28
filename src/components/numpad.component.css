@@ -1,15 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .NumPad{
     display: none;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100vw;
     font-size: 2em;
     margin: auto;
     /* border-color: red;
     border-width: 2px;
     border-style: solid; */
-    flex: 3;
-    height: 20%;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.733);
 }
 
@@ -22,6 +36,8 @@
 
 @media screen and (max-width:1366px){
     .NumPad{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }

@@ -1,133 +1,258 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .square{
-    background: #ffffff;
-    position: absolute;
-    display: block;
-    top:0;
-    left:0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    border: none;
-    box-sizing: border-box;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  top:0;
+  left:0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .square-grid{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows:auto auto auto;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: auto auto auto;
+grid-template-columns: auto auto auto;
+-ms-grid-rows:auto auto auto;
+grid-template-rows:auto auto auto;
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+.square-grid > *:nth-child(1){
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.square-grid > *:nth-child(2){
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.square-grid > *:nth-child(3){
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.square-grid > *:nth-child(4){
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.square-grid > *:nth-child(5){
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.square-grid > *:nth-child(6){
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.square-grid > *:nth-child(7){
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.square-grid > *:nth-child(8){
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.square-grid > *:nth-child(9){
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
 }
 .square-grid div{
-  /* border: 1px solid rgba(0, 0, 231, 0.596); */
-  text-align: center;
-  align-items: center;
-  font-size: 10px;
-  color: grey;
-  opacity: 0.5;
+/* border: 1px solid rgba(0, 0, 231, 0.596); */
+text-align: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+font-size: 10px;
+color: grey;
+opacity: 0.5;
 }
 
 .square-correct{
-  background-color: rgba(54, 236, 151, 0.849);
+background-color: rgba(54, 236, 151, 0.849);
 }
 
 .square-wrong{
-  background-color: rgba(248, 125, 125, 0.815);
+background-color: rgba(248, 125, 125, 0.815);
 }
 
 
 .square-prototype{
-  color: blue;
+color: blue;
 }
 
 .square-focus{
-    color: green;
+  color: green;
 }
 
 .square-focus:before{
-    content:' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    opacity: 0.2;
+  content:' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  opacity: 0.2;
 
 }
 
 .square-neighbor{
-    background-color: rgba(243, 241, 241, 0.5);
+  background-color: rgba(243, 241, 241, 0.5);
 }
 
 .solved{
-  background-color: rgba(0, 0, 231, 0.596);
-  color: white;
+background-color: rgba(0, 0, 231, 0.596);
+color: white;
 }
 
 .square-solve{
-    animation-name: visitedAnimation;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
+  -webkit-animation-name: visitedAnimation;
+          animation-name: visitedAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .zero-square{
-  animation-name: zeroSquare;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+-webkit-animation-name: zeroSquare;
+        animation-name: zeroSquare;
+-webkit-animation-duration: 1s;
+        animation-duration: 1s;
+-webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+-webkit-animation-delay: 0;
+        animation-delay: 0;
+-webkit-animation-direction: alternate;
+        animation-direction: alternate;
+-webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+-webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+-webkit-animation-play-state: running;
+        animation-play-state: running;
+}
+
+@-webkit-keyframes zeroSquare{
+0% {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+50%{
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+100%{
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color:rgba(171, 136, 255, 0.692);
+
+}
 }
 
 @keyframes zeroSquare{
+0% {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+50%{
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+100%{
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color:rgba(171, 136, 255, 0.692);
+
+}
+}
+
+@-webkit-keyframes visitedAnimation {
   0% {
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    background-color: rgba(0, 0, 66, 0.75);
   }
 
-  50%{
-    transform: scale(1.2);
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
   }
 
-  100%{
-    transform: scale(1);
-    background-color:rgba(171, 136, 255, 0.692);
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: rgba(0, 217, 159, 0.75);
+    z-index:1;
+  }
 
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
   }
 }
 
 @keyframes visitedAnimation {
-    0% {
-      transform: scale(0.7);
-      background-color: rgba(0, 0, 66, 0.75);
-    }
-  
-    50% {
-      background-color: rgba(17, 104, 217, 0.75);
-    }
-  
-    75% {
-      transform: scale(1.2);
-      background-color: rgba(0, 217, 159, 0.75);
-      z-index:1;
-    }
-  
-    100% {
-      transform: scale(1);
-      background-color: rgba(0, 190, 218, 0.75);
-    }
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    background-color: rgba(0, 0, 66, 0.75);
   }
 
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: rgba(0, 217, 159, 0.75);
+    z-index:1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+}
 
