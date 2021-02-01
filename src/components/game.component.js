@@ -33,6 +33,10 @@ class game extends React.Component{
         this.zeroAnimation = this.zeroAnimation.bind(this);
         this.solveAnimation = this.solveAnimation.bind(this);
     }
+    componentDidMount(){
+        this.handleRandom()
+    }
+
     //animation for solving
     solveAnimation(animation){
         for(let i = 0 ; i < animation.length; i++){
@@ -178,7 +182,7 @@ class game extends React.Component{
                 _.whenKey(0,row,col,true);
             }));
 
-            $('button').on('blur',function(){
+            $('button').on('focusout',function(){
                 $('button[row='+row+']').removeClass('square-neighbor');
                 $('button[col='+col+']').removeClass('square-neighbor');    
                 $('button[value='+i+']').removeClass('square-focus');
