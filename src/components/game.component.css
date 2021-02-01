@@ -68,8 +68,7 @@ html,body{
         margin: auto 0;
     }
 } */
-@media screen and (max-width: 870px){
-    /* and (orientation: portrait) */
+@media only screen and (max-width:1025px) and (orientation: portrait){ 
     .cover{
         display: grid;
         grid-template-rows: auto 1fr auto auto;

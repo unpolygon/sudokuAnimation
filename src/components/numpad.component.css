@@ -22,16 +22,29 @@
     color: black;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1025px) {
     .NumPad{
         display: flex;
         padding-bottom:50px;
     }
 }
 
-@media (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width:1025px){
     .NumPad{
         display: flex;
         padding-bottom:50px;
     }
   }
+
+  
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .NumPad{
+        display: flex;
+        padding-bottom:50px;
+    }
+}
