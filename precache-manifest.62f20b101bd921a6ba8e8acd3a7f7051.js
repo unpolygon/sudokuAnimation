@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2df0678ef560216b80e96d4f8ec0dc5",
+    "revision": "95d808006ee34c7bb5d2aa37ecde7c50",
     "url": "/sudokuAnimation/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sudokuAnimation/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "58634f430ae326953c5e",
+    "revision": "18cde526f7f146592fc3",
     "url": "/sudokuAnimation/static/css/main.2d225c39.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sudokuAnimation/static/js/2.87c2ec73.chunk.js"
   },
   {
-    "revision": "58634f430ae326953c5e",
-    "url": "/sudokuAnimation/static/js/main.11237c5f.chunk.js"
+    "revision": "18cde526f7f146592fc3",
+    "url": "/sudokuAnimation/static/js/main.a9844b00.chunk.js"
   },
   {
     "revision": "9ab32e9c566e4364ad62",
