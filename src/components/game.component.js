@@ -127,6 +127,7 @@ class game extends React.Component{
 
     whenKey(e,row,col,numpad){
         if (this.state.solved) return;
+        if ($('button[row='+row+'][col='+col+']').hasClass('square-prototype') == false) return;
         if ($('button[row='+row+'][col='+col+']').attr('class') === 'square' && this.state.random) return;
         $('button[row='+row+'][col='+col+']').removeClass('square-wrong square-correct');
         let history = this.state.history.slice(0,this.state.step + 1);
